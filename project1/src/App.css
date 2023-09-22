@@ -1,0 +1,93 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:  100vw;
+  height: 8vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  font-weight: 600;
+}
+
+.logo img{
+  margin-left: 50px;
+}
+
+.button button{
+  margin-right: 50px;
+  border: none;
+  background-color: rgb(23, 172, 231);
+  font-size: 16px;
+  padding: 6px 16px;
+  color: white;
+  font-weight: 400;
+}
+
+.herodiv{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+ width: 80vw;
+ /* height: calc(100vh-8vh); */
+ margin: 0 auto;
+
+ 
+}
+
+.left h1{
+  font-weight: 600;
+  font-size:80px;
+  line-height:82px ;
+  margin-top: 40px;
+}
+
+.left p{
+  font-weight: 500;
+  color: gray;
+  margin-top: 32px;
+  width: 480px;
+  
+
+}
+
+.leftbutton {
+  margin-top: 32px;
+  display: flex;
+  gap: 30px;
+  
+}
+button{
+  border: none;
+  padding: 6px 16px;
+  background-color: rgb(26, 168, 224);
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  border-radius: 7px;
+}
+
+.cat {
+  background:transparent;
+  color:gray;
+  border: 2px solid gray;
+  border-radius: 7px;
+}
+
+.leftimg{
+  margin-top: 10px;
+  display:  flex;
+  gap:16px ;
+}
