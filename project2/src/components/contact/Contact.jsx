@@ -22,7 +22,7 @@ function Contact(){
         setName(e.target[0].value)
         setEmail(e.target[1].value)
         setText(e.target[2].value)
-        
+        // console.log(e.target[0]);
         // console.log("name",e.target[0].value);
         // console.log("email",e.target[1].value);
         // console.log("text",e.target[2].value);

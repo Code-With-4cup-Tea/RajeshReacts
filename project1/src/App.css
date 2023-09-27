@@ -4,12 +4,15 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+*{
+  font-size: 62.%;
+}
 
 .navigation{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:  100vw;
+  width:  10rem;
   height: 8vh;
   background-color: rgb(255, 255, 255);
 }
@@ -49,7 +52,7 @@
 
 .left h1{
   font-weight: 600;
-  font-size:80px;
+  font-size:6vw;
   line-height:82px ;
   margin-top: 40px;
 }
