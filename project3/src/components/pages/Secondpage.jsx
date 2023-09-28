@@ -9,7 +9,7 @@ const Secondpage = () => {
   const [score,setScore]= useState(0);
   const [selectedNumber,setSelectedNumber] = useState(0);
   const [currentDice,setCurrentDice] = useState(1);
-  const [norule,setRull] = useState(" ");
+  const [norule,setRull] = useState(false);
   // console.log(selectedNumber,currentDice);
 
   const genraterandomnumber = (min,max)=>{
@@ -41,7 +41,7 @@ const Secondpage = () => {
   }
 
   const showrule = ()=>{
-    setRull((prev)=>"FIRST CHOOSE A NUMBER , THAN ROLL DICE IF NUMBER EQUAL TO ROLL THAN SCORE INCREASE WITH DICE NUMBER OTHER WISE -2")
+    setRull((prev)=>!prev)
 
   }
   return (
@@ -53,10 +53,10 @@ const Secondpage = () => {
     <Rolldice currentDice={currentDice} setCurrentDice={setCurrentDice} rollDice={rollDice}/>
         
         <Button ><button onClick={reset}>Reset Game</button>
-          <button onClick={showrule}>Click For Rule</button>
+          <button onClick={showrule} >Click For Rule</button>
           </Button>
-        <p>{norule}</p>
-       
+        {norule && <p>"FIRST CHOOSE A NUMBER , THAN ROLL DICE IF NUMBER EQUAL TO ROLL THAN SCORE INCREASE WITH DICE NUMBER OTHER WISE -2"</p>
+          /*this hide this statement   */               }  
     </>
   )
 }
