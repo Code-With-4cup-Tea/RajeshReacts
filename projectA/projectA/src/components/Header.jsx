@@ -1,15 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {HashLink} from 'react-router-hash-link'
 
 const Header = () => {
   return (
             <nav>
                 <h1>TechMoon</h1>
-                <main>
-                    <Link to={'/'}>Home</Link>
+                <main> 
+                {
+                    //4:link using for not reload page afte click text after to show page address name
+                }
+                    <HashLink to={'/#home'}>Home</HashLink>
                     <Link to={'/contact'}>Contact</Link>
-                    <Link to={'/#about'}>About</Link>
-                    <Link to={'/#brands'}>Brands</Link>
+                    <HashLink to={'/#about'}>About</HashLink>
+                    <HashLink to={'/#brands'}>Brands</HashLink>
                     <Link to={'/services'}>Services</Link>
                     
                 </main>

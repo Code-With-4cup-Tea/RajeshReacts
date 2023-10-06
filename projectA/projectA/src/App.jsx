@@ -1,11 +1,18 @@
 import React from 'react'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Header from './components/Header';
+import Home from './components/Home';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+import Services from './components/Services';
 import './styles/App.scss';
 import './styles/Colors.scss';
 import './styles/header.scss'
 import './styles/home.scss'
-import Home from './components/Home';
+import './styles/footer.scss'
+import './styles/contact.scss'
+import './styles/mediaqueries.scss'
+
 
 
 const App = () => {
@@ -21,7 +28,10 @@ const App = () => {
                     //6:now we creating route means pages
                   }
                 <Route path='/' element={<Home/>}/>
+                <Route path='/contact' element={<Contact/>}/>
+                <Route path='/services' element={<Services/>}/>
         </Routes>
+                  <Footer/>
    </Router>
   )
 }
