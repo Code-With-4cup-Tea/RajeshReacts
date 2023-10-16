@@ -15,12 +15,12 @@ import './styles/mediaqueries.scss'
 
 
 
+
+
 const App = () => {
   return (
    <Router>
-                <Header/> { //3: for fixed header in all pages so put Header before Routes or after Router//  
-                              }
-          
+               <Header/>
           
                                                         
         <Routes>

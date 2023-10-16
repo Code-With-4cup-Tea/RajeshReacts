@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {HashLink} from 'react-router-hash-link'
+import Button from './Button'
+
 
 const Header = () => {
+
+const [open,setOpen] = useState(false);
+
+
+const popup = ()=>{
+    setOpen(!open)
+}   
+   
+
+  
+    
   return (
             <nav>
                 <h1>TechMoon</h1>
@@ -15,6 +28,7 @@ const Header = () => {
                     <HashLink to={'/#about'}>About</HashLink>
                     <HashLink to={'/#brands'}>Brands</HashLink>
                     <Link to={'/services'}>Services</Link>
+                    <Button open={open} popup={popup}/>
                     
                 </main>
             </nav>

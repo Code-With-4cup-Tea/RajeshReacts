@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 import './styles/Header.scss'
 import './styles/App.scss'
 import './styles/Home.scss'
-import './styles/Tea.scss'
+
 
 
 const App = () => {
