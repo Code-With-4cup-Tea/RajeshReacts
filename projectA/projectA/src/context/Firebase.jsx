@@ -50,9 +50,14 @@ export const FirebaseProvider = ({children})=>{    //3: create firebaseprovider 
 
     const signupWithPopup = ()=>{
         signInWithPopup(firebaseAuth,googleProvider)
+
+    }
+
+    const sum = ()=>{
+      return ("welcome in this projects");
     }
     
-    return <fireBaseContext.Provider value={{singUpuserWithemailandPassword,putData,signupWithPopup}}>       {/* //4:wraping with provider       */}
+    return <fireBaseContext.Provider value={{singUpuserWithemailandPassword,putData,signupWithPopup,sum}}>       {/* //4:wraping with provider       */}
                 {children}
           </fireBaseContext.Provider>
 }

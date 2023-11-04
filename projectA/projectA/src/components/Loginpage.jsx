@@ -16,7 +16,7 @@ const Loginpage = ({popup}) => {
   
   return (
     <>
-        <Login>
+        <Login> 
                 <button onClick={popup}>close</button>
                 <input type="email"  placeholder='enter Email' required onChange={(e)=>setEmail(e.target.value)} value={email}/>
                
@@ -24,6 +24,8 @@ const Loginpage = ({popup}) => {
                 <button onClick={()=>firebase.singUpuserWithemailandPassword(email,password)} >login</button>
                <br/>
                <button onClick={firebase.signupWithPopup}>Sing_Up_with_Google</button>
+               <br/>
+               
                
         </Login>
     </>

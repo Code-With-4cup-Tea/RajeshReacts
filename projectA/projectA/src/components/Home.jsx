@@ -1,13 +1,19 @@
 import React from 'react'
 import vg from "../assets/2.webp"
 import {AiFillGoogleCircle,AiFillAmazonCircle,AiFillYoutube,AiFillInstagram} from 'react-icons/ai'
+import { useFirebase } from '../context/Firebase'
 
 const Home = () => {
+    const firebase = useFirebase();
+
+    console.log(firebase.sum())
   return (
     <>
         <div className='home' id='home'>
+      
             <main>
                 <h1>techmoon</h1>
+                <p style={{color:'red'}}>{firebase.sum()}</p>
                 <p>we resolved all your problem</p>
             </main>
         </div>

@@ -17,7 +17,9 @@ import './styles/mediaqueries.scss'
 
 
 
+
 const App = () => {
+ 
   return (
    <Router>
                <Header/>
